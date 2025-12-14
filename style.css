@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #eaeaea;
+    / font-size: 16px; */
+}
+/*
+ * Стилізація секції section-main
+ */
+.section-main {
+    background-color: #556b2f;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Вирівнювання дочірніх елементів по центру */
+    /* justify-content: center; Якщо потрібно вирівняти по центру по вертикалі (у стовпці) */
+}
+
+.logo {
+    width: 160px;
+}
+
+.section-main-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Lora', serif; /* Припускаємо, що шрифт 'Lora' підключено */
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center; /* Додатково для кращого вигляду в стовпці */
+}
+
+.section-main-subtitle {
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 22px;
+    text-align: center; /* Додатково для кращого вигляду в стовпці */
+}
+
+.section-main-button {
+    background-color: #8fbc8f;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 30px; /* 12рх зверху і знизу, 30рх зліва і справа */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Додано для візуального ефекту */
+}
+
+.section-main-button:hover {
+    background-color: #79a379; /* Трішки темніший колір при наведенні */
+}
+
+/*
+ * Стилізація секції second-section
+ */
+.second-section {
+    display: flex;
+    justify-content: space-between; /* Вирівнювання елементів по ширині контейнера з пропусками між елементами */
+    align-items: center; /* Вирівнювання по центру по вертикалі */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px; /* Додано для візуального відступу від країв */
+    padding-right: 20px; /* Додано для візуального відступу від країв */
+    gap: 30px; /* Для кращого контролю відстані між елементами */
+}
+
+.second-section-image {
+    width: 500px;
+    border: 5px solid #556b2f;
+    border-radius: 20px;
+    height: auto; /* Для збереження пропорцій зображення */
+    display: block;
+}
+
+.second-section-info {
+    margin-left: 30px;
+    max-width: 600px;
+    flex-shrink: 0; /* Щоб блок не стискався */
+}
+
+.section-subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #8fbc8f;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #556b2f;
+    font-size: 32px;
+    font-weight: bold;
+    /* Перші літери кожного слова великі (необхідно зробити за допомогою JS або просто стилізувати text-transform: capitalize, якщо це прийнятно для одномовного тексту) */
+    text-transform: capitalize; /* Встановлюємо, як стилізацію для задоволення вимоги */
+}
+
+.second-section-text {
+    margin: 30px 0; /* Зверху і знизу 30px, по боках 0 */
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6; /* Додано для кращої читабельності */
+}
+
+.second-section-name {
+    color: #556b2f;
+    text-transform: capitalize; /* Перші літери кожного слова великі */
+    display: block; /* Для кращого розділення, якщо йде з наступним елементом */
+    margin-bottom: 5px;
+}
+
+.second-section-name2 {
+    color: #8fbc8f;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+
+/*
+ * Стилізація секції third-section
+ */
+.third-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Вирівнювання дочірніх елементів по центру */
+    background-color: #f5f5f5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.third-section-books {
+    display: flex;
+    justify-content: center; /* Вирівнювання по центру по горизонталі */
+    align-items: center; /* Вирівнювання по центру по вертикалі */
+    margin-top: 30px;
+    flex-wrap: wrap; /* Перенесення елементів на новий рядок */
+    max-width: 1200px; /* Обмеження ширини контейнера для кращого вигляду */
+    gap: 10px; /* Додатковий невеликий проміжок між елементами */
+}
+
+.third-section-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Вирівнювання дочірніх елементів по центру */
+    text-align: center; /* Додатково для тексту */
+    margin: 10px 20px; /* Зверху і знизу 10рх, зліва і справа 20рх */
+    padding: 10px; /* Додатковий внутрішній відступ */
+}
+
+.book-img {
+    height: 200px;
+    width: auto; /* Автоматична ширина для збереження пропорцій */
+    object-fit: cover; /* Для кращого відображення зображень */
+    border-radius: 5px; /* Невелике заокруглення для естетики */
+}
+
+.book-title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #556b2f;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.book-author {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: #666;
+}
+
+.book-price {
+    margin: 0; /* Обнуління зовнішніх відступів */
+    color: #8fbc8f;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*
+ * Стилізація секції footer
+ */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Вирівнювання дочірніх елементів по центру */
+    background-color: #2f4f4f;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff; /* Загальний колір тексту для футера */
+}
+
+.footer-title {
+    color: #fff;
+    margin-bottom: 10px; /* Додано для кращого вигляду */
+}
+
+.footer-text {
+    width: 600px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #8fbc8f;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.footer-text-main {
+    color: #fff;
+    display: block; /* Для кращого відокремлення, якщо потрібно */
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Вирівнювання дочірніх елементів по центру */
+}
+
+.form-title {
+    margin-top: 20px;
+    margin-bottom: 10px; /* Замість 10рх, щоб не було незрозуміло */
+    /* margin: 20px 0 10px 0; */
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form-input {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 10px; /* 0 зверху/знизу, 10рх зліва/справа */
+    background-color: #2f4f4f;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    box-sizing: border-box; /* Для включення padding та border у загальну ширину */
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Трішки прозоріший текст-заповнювач */
+}
+
+.footer-button {
+    margin-top: 30px;
+    padding: 10px 20px; /* 10рх зверху/знизу, 20рх зліва/справа */
+    background-color: #8fbc8f;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase; /* Додано для відповідності стилю кнопки в section-main */
+    transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+    background-color: #79a379;
+}
+
+/* Приклад адаптивності для мобільних пристроїв */
+@media (max-width: 768px) {
+    .second-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .second-section-image {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+
+    .second-section-info {
+        margin-left: 0;
+        max-width: 90%;
+    }
+
+    .footer-text, .form-input {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .third-section-books {
+        padding: 0 10px;
+    }
+
+    .third-section-book {
+        margin: 10px;
+    }
+}
